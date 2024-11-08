@@ -17,10 +17,17 @@
 }
 
 .logout {
-    padding: 5px;
+    padding: 7px;
     border: none;
-    background-color: #53c28b;
+    background-color: #2e7050;
     color: white;
     cursor: pointer;
     border-radius: 3px;
+    transition: color .1s;
+}
+
+.logout:hover {
+    background-color: transparent;
+    color: white;
+    border: 1px solid #ffff;
 }
