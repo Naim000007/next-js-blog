@@ -3,12 +3,17 @@ import { NextResponse } from "next/server";
 import { writeFile } from "fs/promises";
 import BlogModel from "@/lib/model/BlogModel";
 
+
+
+//API endpoint to get all blog posts
 export async function GET(request) {
     await connectDB();
-    console.log("Blog get hit");
-    return NextResponse.json({ msg: "api working" });
+    const blogs = await BlogModel.find({})
+    return NextResponse.json({ blogs });
 }
 
+
+// API endpoint for uploading blog posts
 export async function POST(request) {
     await connectDB();
     const formData = await request.formData();
