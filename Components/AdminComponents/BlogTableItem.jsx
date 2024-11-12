@@ -2,7 +2,7 @@ import { assets } from '@/Assets/assets'
 import Image from 'next/image'
 import React from 'react'
 
-const BlogTableItem = ({ authorImg, title, author, date }) => {
+const BlogTableItem = ({ authorImg, title, author, date, deleteBlog, mongoId }) => {
     // Check if the date is valid or fallback to a default value
     const BlogDate = date ? new Date(date) : new Date();
     const formattedDate = BlogDate.toString() === 'Invalid Date' ? 'Date not available' : BlogDate.toDateString();
@@ -25,7 +25,7 @@ const BlogTableItem = ({ authorImg, title, author, date }) => {
             <td className='px-6 py-4 text-gray-500'>
                 {formattedDate}
             </td>
-            <td className='px-6 py-4 text-center text-red-500 cursor-pointer hover:text-red-600'>
+            <td onClick={() => { deleteBlog(mongoId) }} className='px-6 py-4 text-center text-red-500 cursor-pointer hover:text-red-600'>
                 x
             </td>
         </tr>
