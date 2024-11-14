@@ -48,19 +48,11 @@ const page = ({ params }) => {
             </div>
             <div className='mx-5 max-w-[800px] md:mx-auto mt-[-100px] mb-10'>
                 <Image className='border-4 border-white' src={data.image} width={1280} height={720} alt='' />
-                <h1 className='my-8 text-[-26px] font-semibold'>Introduction:</h1>
-                <p>{data.description}</p>
-                <h3 className='my-5 text-[18px] font-semibold'>Step 1: Self-Reflection and Goal Settings</h3>
-                <p className='my-3'>Befor you can manage your lifestyle, you must have a clear and achival goal. start by reflecting on your values, aspirations and long-term goals.</p>
-                <p className='my-3'>Befor you can manage your lifestyle, you must have a clear and achival goal. start by reflecting on your values, aspirations and long-term goals.</p>
-                <h3 className='my-5 text-[18px] font-semibold'>Step 2: Self-Reflection and Goal Settings</h3>
-                <p className='my-3'>Befor you can manage your lifestyle, you must have a clear and achival goal. start by reflecting on your values, aspirations and long-term goals.</p>
-                <p className='my-3'>Befor you can manage your lifestyle, you must have a clear and achival goal. start by reflecting on your values, aspirations and long-term goals.</p>
-                <h3 className='my-5 text-[18px] font-semibold'>Step 3: Self-Reflection and Goal Settings</h3>
-                <p className='my-3'>Befor you can manage your lifestyle, you must have a clear and achival goal. start by reflecting on your values, aspirations and long-term goals.</p>
-                <p className='my-3'>Befor you can manage your lifestyle, you must have a clear and achival goal. start by reflecting on your values, aspirations and long-term goals.</p>
-                <h3 className='my-5 text-[18px] font-semibold'>Conclusion </h3>
-                <p className='my-3'>Managing your lifestyle is a journey that requires and self awarness. By following setps by step guide  you can take control of your life and make meaningful chane that lead to a more balanced and fulfilling lifestyle. Befor you can manage your lifestyle, you must have a clear and achival goal. start by reflecting on your values, aspirations and long-term goals.Managing your lifestyle is a journey that requires and self awarness. By following setps by step guide  you can take control of your life and make meaningful chane that lead to a more balanced and fulfilling lifestyle. Befor you can manage your lifestyle, you must have a clear and achival goal. start by reflecting on your values, aspirations and long-term goals.</p>
+
+                <div className='blog-content' dangerouslySetInnerHTML={{ __html: data.description }}>
+
+                </div>
+
                 <div className='my-24'>
                     <p className='text-black font font-semibold my-4'>Share this article on socila media</p>
                     <div className='flex'>
