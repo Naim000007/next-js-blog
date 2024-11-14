@@ -32,10 +32,10 @@ To start the development server: npm run dev
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
 📂 Project Structure
-pages/: Contains the app's pages and API routes.
-components/: Reusable UI components.
-lib/: Utility functions and database connections.
-styles/: Global and component-specific styles.
+1. pages/: Contains the app's pages and API routes.
+2. components/: Reusable UI components.
+3. lib/: Utility functions and database connections.
+4. styles/: Global and component-specific styles.
 
 🛡️ Admin Dashboard
 📝 Create Post: Admins can add new blog posts with a user-friendly editor.
