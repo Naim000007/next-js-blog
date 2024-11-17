@@ -50,7 +50,7 @@ const Header = () => {
             <div className='text-center my-8'>
                 <h1 className='text-3xl sm:text-5xl font-medium'>Latest Blogs</h1>
                 <p className='mt-10 max-w-[740px] m-auto text-xs sm:text-base'>
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Alias labore sint eum autem est. Dolores distinctio quis animi sapiente! Maxime?
+                    Welcome to Blogger – Your trusted partner for innovative web solutions, app development, and data-driven strategies to elevate your business.
                 </p>
                 <form onSubmit={onSubmitHandler} className='flex justify-between max-w-[500px] scale-75 sm:scale-100 mx-auto mt-10 border border-black shadow-[-7px_7px_0px_#000000]'>
                     <input
